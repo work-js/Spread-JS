@@ -66,6 +66,7 @@ export default function filter (arrays, fn, ...conditions) {
 if (new RegExp(__FILENAME__+'$').test(process.argv[1])) {
   let A = [0,1,2,3,4,5];
   let B = [2,4,5,6,6,5];
+  // test
   console.log(filter([A],a=>a+1,a=>a<3));
   console.log(filter([A,B],(a,b)=>a+b,(a,b)=> a+b<8, (a,b)=> b>3));
 }

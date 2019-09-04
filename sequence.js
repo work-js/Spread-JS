@@ -28,9 +28,10 @@ export default function seqeunce (seed, iter, cd) {
 };
 
 if (new RegExp(__FILENAME__+'$').test(process.argv[1])) {
+  // natural numbers
   console.log(seqeunce(0, u=>u+1, v=> v<10 ));
-
+  // fibonacci sequence
   console.log(seqeunce([0,1], (t,u)=>t+u, v=> v<150 ));
-
+  // tribonacci sequence
   console.log(seqeunce([0,0,1], (s,t,u)=>s+t+u, v=> v<150 ));
 }

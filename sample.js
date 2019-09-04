@@ -1,5 +1,5 @@
 'use strict';
-import unfold from './unfold.js';
+import unfold from './lib/unfold.js';
 
 const numbers = Array.from(new Array(100).keys()).map(i => ++i);// 1..100の連番の配列生成
 const result = numbers                               // 配列を...

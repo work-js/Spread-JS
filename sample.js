@@ -24,3 +24,9 @@ console.log(arrayformula([A,B],
 // vlookup({"c";"a";"b";"c";"c";"a"}, {"a",1;"b",2;"c",3},2,false),
 console.log(sortby(A, arrayformula([A,B],
   (a,b,index,_A,_B) => vlookup(a,_B,1,false)),true));
+
+//  =sortby(
+// {"c";"a";"b";"c";"c";"a"},
+// vlookup({"c";"a";"b";"c";"c";"a"}, {"a",1;"b",2;"c",3},2,false),
+console.log(sortby(A, arrayformula(A,
+  (a) => vlookup(a,B,1,false)),true));

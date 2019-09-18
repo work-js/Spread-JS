@@ -1,4 +1,5 @@
 'use strict';
+import _freeze from './lib/_freeze.js';
 import arrayformula from './lib/arrayformula.js';
 import vlookup from './lib/vlookup.js';
 import sortby from './lib/sortby.js';
